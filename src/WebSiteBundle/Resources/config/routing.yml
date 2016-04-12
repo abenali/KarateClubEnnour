@@ -1,0 +1,7 @@
+homepage:
+    path:     /
+    defaults: { _controller: WebSiteBundle:Main:index }
+
+contact:
+    path:     /contact_us
+    defaults: { _controller: WebSiteBundle:Contact:loadContactForm }

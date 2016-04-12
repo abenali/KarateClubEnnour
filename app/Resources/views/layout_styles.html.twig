@@ -1,0 +1,16 @@
+       <link rel="stylesheet" href="{{ asset('public/css/skel-noscript.css') }}" />
+    <link rel="stylesheet" href="{{ asset('public/css/style.css') }}" />
+    <link rel="stylesheet" href="{{ asset('public/css/style-desktop.css') }}" />
+    <!--[if lte IE 8]><link rel="stylesheet" href="{{ asset('public/css/ie/v8.css') }}" /><![endif]-->
+    <!--[if lte IE 9]><link rel="stylesheet" href="{{ asset('public/css/ie/v9.css') }}" /><![endif]-->    
+
+
+{% stylesheets
+    '@WebSiteBundle/Resources/public/css/skel-noscript.css'
+    '@WebSiteBundle/Resources/public/css/style.css'
+    '@WebSiteBundle/Resources/public/css/style-desktop.css'
+    '@WebSiteBundle/Resources/public/css/ie/v8.css'
+    '@WebSiteBundle/Resources/public/css/ie/v9.css'
+%}
+    <link rel="stylesheet" type="text/css" href="{{ asset_url }}"/>
+{% endstylesheets %}
